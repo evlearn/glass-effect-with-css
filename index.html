@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glass Effect with CSS | Glassmorphism</title>
+</head>
+<body>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: url("bg.jpg") no-repeat center center;
+            background-size: cover;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            width: 800px;
+            height: 500px;
+            background: transparent;
+            border-radius: 50px;
+            box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(1rem);
+        }
+    </style>
+    <div class="container"></div>
+</body>
+</html>
